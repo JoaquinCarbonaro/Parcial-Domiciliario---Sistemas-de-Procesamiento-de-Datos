@@ -6,7 +6,8 @@ En este proyecto, diseñaremos un contador que mostrará números del 0 al 99 ut
 
 ### [Enlace al Código Completo en GitHub](Codigos/PARCIAL_1.ino)
 
-### [Diagrama del circuito](Imagenes/Parcial - parte 1.jpg)
+### [Diagrama del circuito]
+![Parcial - parte 1](https://github.com/JoaquinCarbonaro/Parcial-Domiciliario---Sistemas-de-Procesamiento-de-Datos/assets/138243106/413d6e88-8311-4a59-b67a-fd21a6e597aa)
 
 ### Multiplexación
 En este proyecto, la multiplexación se ha implementado con precisión para controlar los displays de 7 segmentos de manera eficiente. La técnica de multiplexación permite mostrar los dígitos de las unidades y decenas en los dos displays "UNIDAD" y "DECENA" alternativamente, a una velocidad lo suficientemente rápida para crear la ilusión de que ambos están encendidos al mismo tiempo. Este enfoque optimiza el uso de recursos y garantiza un funcionamiento suave y sin parpadeos.
