@@ -76,13 +76,11 @@ En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Par
 
 #### Componente Adicional: Fotoresistencia
 
-- **Descripción del Componente**: El componente central de este sistema es el sensor de temperatura TMP36. Este sensor está diseñado para medir la temperatura ambiente y se conecta al pin A1 del Arduino. Proporciona una señal de voltaje proporcional a la temperatura ambiente, lo que lo convierte en un componente fundamental para la captura de datos térmicos.
+- **Descripción del Componente**: La fotoresistencia, también conocida como LDR (Light Dependent Resistor), es un componente electrónico que exhibe una variación en su resistencia en función de la cantidad de luz que incide sobre él. Su resistencia disminuye en presencia de una iluminación intensa y aumenta en la oscuridad. Este componente se clasifica como un sensor y se utiliza comúnmente para detectar la intensidad lumínica en su entorno.
 
-- **Función en el Proyecto**: En el contexto de este proyecto, el sensor de temperatura cumple una función crítica. Su objetivo es monitorear la temperatura ambiente y convertirla en datos medibles. Utiliza una fórmula específica para convertir la señal de voltaje en grados Celsius. Esta información se utiliza para tomar decisiones automatizadas basadas en la temperatura.
+- **Función en el Proyecto**: En el contexto de este proyecto, la fotoresistencia desempeña un papel crucial. Está conectada al pin A0 del Arduino y se emplea para medir la intensidad de luz ambiente. La lectura de la fotoresistencia se mapea a un valor de brillo que controla la intensidad del LED rojo conectado al pin 5. En otras palabras, la luminosidad del LED rojo varía en función de la cantidad de luz presente en el entorno. Además, cuando la temperatura supera un umbral definido, el LED rojo se enciende con una intensidad que depende de la lectura de la fotoresistencia. Esto proporciona una indicación visual de la intensidad lumínica en situaciones de alta temperatura.
 
-- **Integración en el Proyecto**: El sensor de temperatura está íntimamente integrado en el proyecto, ya que es el componente principal que controla el funcionamiento del motor del ventilador. Cuando la temperatura medida supera el umbral predefinido de 40 grados Celsius, el código del proyecto envía una señal para encender el motor del ventilador (conectado al pin A3). Esta interacción permite mantener la temperatura del entorno dentro de un rango deseado, ya que el ventilador se activa automáticamente para enfriar el área cuando la temperatura aumenta.
-
-El sistema proporciona una solución efectiva para el monitoreo y el control de la temperatura en el entorno, aprovechando la capacidad del sensor de temperatura y la acción del ventilador para lograr un control térmico automatizado.
+- **Integración en el Proyecto**: La fotoresistencia se encuentra íntimamente integrada en el proyecto y se vincula tanto al control de luz como al control de temperatura. Esta integración permite regular la intensidad del LED rojo con base en la luz ambiental y la temperatura medida. Este enfoque resulta beneficioso en una variedad de aplicaciones, como sistemas de control ambiental y sistemas de monitoreo que requieren una retroalimentación visual basada en la intensidad lumínica y la temperatura.
 
 
 ### Autor
