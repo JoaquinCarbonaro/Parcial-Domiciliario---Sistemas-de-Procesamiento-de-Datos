@@ -4,7 +4,7 @@
 
 En este proyecto, diseñaremos un contador que mostrará números del 0 al 99 utilizando dos displays de 7 segmentos. Implementaremos la técnica de multiplexación para mostrar los dígitos en los displays. El contador comenzará en 0 y se podrá incrementar o disminuir su valor en una unidad con los botones.
 
-### [Enlace al Código Completo en GitHub](enlace-a-tu-repositorio-con-el-codigo)
+### [Enlace al Código Completo en GitHub](Codigos/PARCIAL_1.ino)
 
 ### Diagrama del circuito
 ![Parcial - parte 1](https://github.com/JoaquinCarbonaro/Parcial-Domiciliario---Sistemas-de-Procesamiento-de-Datos/assets/138243106/5b722cd4-4162-4fe8-aa45-89dd22b88ea7)
