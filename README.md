@@ -75,5 +75,17 @@ En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Par
 - **Integración en el Proyecto**: La fotoresistencia se encuentra íntimamente integrada en el proyecto y se vincula tanto al control de luz como al control de temperatura. Esta integración permite regular la intensidad del LED rojo con base en la luz ambiental y la temperatura medida. Este enfoque resulta beneficioso en una variedad de aplicaciones, como sistemas de control ambiental y sistemas de monitoreo que requieren una retroalimentación visual basada en la intensidad lumínica y la temperatura.
 
 
+## Parte 4: Modificación según el Último Número de Documento
+
+Considerando el último número de tu número de documento (DNI o documento de identidad), modifica una funcionalidad del proyecto. Si tu número de documento termina en (0-3) deberás implementar a tu proyecto que el interruptor deslizante de la parte dos tenga la función de encender y apagar el sistema, solo mostrando los números primos.
+
+### [Enlace al Código Completo en GitHub](Codigos/PARCIAL_1.ino)
+
+### [Diagrama del circuito]
+![Parcial - parte 4](https://github.com/JoaquinCarbonaro/Parcial-Domiciliario---Sistemas-de-Procesamiento-de-Datos/assets/138243106/d7f462ea-02d4-4dcb-8cec-86e801c01937)
+
+### [Enlace al Tinkercad](https://www.tinkercad.com/things/hrGVLN8B6LW?sharecode=PC-VvIu_ZNJLlBZ--qM-jlJU69PQQDTH0EQK0xCnVuY)
+
+
 ### Autor
 - Carbonaro Joaquin
