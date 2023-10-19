@@ -42,11 +42,11 @@ En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Par
 
 ### Componente Electrónico Adicional: Motor de Aficionado
 
-- **Descripción del Componente**: El "Motor de Aficionado" es un componente electrónico utilizado para generar movimiento en proyectos electrónicos. Este motor puede controlarse para girar en diferentes direcciones y velocidades.
+- **Descripción del Componente**: En el contexto de Arduino, un motor de aficionado o ventilador es un componente fundamental que se utiliza para generar flujo de aire o dirección del mismo. En este proyecto, el motor de aficionado se incorpora con el propósito de controlar la temperatura en un entorno específico, lo que contribuye al enfriamiento automático del área de interés.
 
-- **Función en el Proyecto**: El motor de aficionado se ha agregado al proyecto para crear una representación física del contador. Cuando el contador se incrementa o decrementa, el motor gira en consecuencia, proporcionando una representación visual y atractiva del proceso de conteo.
+- **Función en el Proyecto**: La función principal del motor de aficionado en el proyecto es contribuir al control térmico del entorno. Cuando el sensor de temperatura detecta que la temperatura supera un umbral específico (40 grados Celsius), el motor se activa automáticamente, generando un flujo de aire que enfría el ambiente. Esto responde eficazmente a las variaciones de temperatura, mejorando la comodidad y la eficiencia del control térmico.
 
-- **Integración en el Proyecto**: La integración del motor de aficionado ha requerido la adición de circuitos de control y programación en el código. Se han utilizado pines específicos para controlar la velocidad y dirección del motor. Esto agrega una dimensión física al proyecto, mejorando la experiencia del usuario.
+- **Integración en el Proyecto**: La integración del motor de aficionado en el proyecto se logra mediante su conexión a uno de los pines de salida de Arduino. Esto permite al código del proyecto controlar el encendido y apagado del motor según las condiciones específicas. Cuando la temperatura supera el umbral deseado, el código envía una señal para activar el motor de aficionado. A medida que la temperatura desciende por debajo del umbral, el código ordena que el motor se apague. Esta integración garantiza un control térmico automático y eficiente del entorno, convirtiéndolo en un componente esencial para el proyecto.
 
 ### Componente Electrónico Adicional: Sensor de Temperatura TMP36
 
@@ -76,15 +76,14 @@ En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Par
 
 #### Componente Adicional: Fotoresistencia
 
-- **Descripción del Componente**: La "Fotoresistencia" (también conocida como LDR o Light-Dependent Resistor) es un componente que cambia su resistencia eléctrica en función de la intensidad de la luz incidente. Su resistencia disminuye con la luz intensa y aumenta en la oscuridad.
+- **Descripción del Componente**: El componente central de este sistema es el sensor de temperatura TMP36. Este sensor está diseñado para medir la temperatura ambiente y se conecta al pin A1 del Arduino. Proporciona una señal de voltaje proporcional a la temperatura ambiente, lo que lo convierte en un componente fundamental para la captura de datos térmicos.
 
-- **Función en el Proyecto**: La fotoresistencia se ha incorporado al proyecto para controlar la visualización en el display en función de la luz ambiente. Dependiendo de la luminosidad detectada por la fotoresistencia, el display mostrará el contador o los números primos. La detección de luz ambiental agrega una dimensión adicional de automatización al proyecto.
+- **Función en el Proyecto**: En el contexto de este proyecto, el sensor de temperatura cumple una función crítica. Su objetivo es monitorear la temperatura ambiente y convertirla en datos medibles. Utiliza una fórmula específica para convertir la señal de voltaje en grados Celsius. Esta información se utiliza para tomar decisiones automatizadas basadas en la temperatura.
 
-- **Integración en el Proyecto**: La fotoresistencia se conecta a un pin analógico y se lee periódicamente para determinar la luminosidad. Cuando la luz ambiental supera un umbral específico, el proyecto mostrará el contador en el display. Si la luminosidad desciende por debajo de ese umbral, el proyecto mostrará los números primos. Esto se logra mediante una lógica en el código que verifica la lectura de la fotoresistencia y decide qué información mostrar en el display.
+- **Integración en el Proyecto**: El sensor de temperatura está íntimamente integrado en el proyecto, ya que es el componente principal que controla el funcionamiento del motor del ventilador. Cuando la temperatura medida supera el umbral predefinido de 40 grados Celsius, el código del proyecto envía una señal para encender el motor del ventilador (conectado al pin A3). Esta interacción permite mantener la temperatura del entorno dentro de un rango deseado, ya que el ventilador se activa automáticamente para enfriar el área cuando la temperatura aumenta.
 
-### Lógica detrás de la Modificación
+El sistema proporciona una solución efectiva para el monitoreo y el control de la temperatura en el entorno, aprovechando la capacidad del sensor de temperatura y la acción del ventilador para lograr un control térmico automatizado.
 
-La modificación basada en el último número del DNI se logra mediante la inclusión de la fotoresistencia. La fotoresistencia detecta la luz ambiental y determina si se debe mostrar el contador o los números primos. La lógica en el código toma la lectura de la fotoresistencia y compara con un umbral predefinido. Si la luz supera el umbral, se muestra el contador; si desciende por debajo del umbral, se muestran los números primos. Esto permite una adaptación dinámica del proyecto según las condiciones de iluminación.
 
 ### Autor
 - Carbonaro Joaquin
