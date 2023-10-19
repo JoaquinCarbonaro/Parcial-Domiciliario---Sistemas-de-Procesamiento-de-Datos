@@ -5,6 +5,7 @@
 En este proyecto, diseñaremos un contador que mostrará números del 0 al 99 utilizando dos displays de 7 segmentos. Implementaremos la técnica de multiplexación para mostrar los dígitos en los displays. El contador comenzará en 0 y se podrá incrementar o disminuir su valor en una unidad con los botones.
 
 ### [Enlace al Código Completo en GitHub](Codigos/PARCIAL_1.ino)
+
 ### [Diagrama del circuito](Imagenes/Parcial - parte 1.jpg)
 
 ### Multiplexación
