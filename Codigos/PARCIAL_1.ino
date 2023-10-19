@@ -121,12 +121,7 @@ void ContadorEntero(int numero)
     digitoEncendido(UNIDAD);
 }
 
-
-/* Función para activar un dígito (unidad o decena) - Multiplexación:
-Alternar entre los dos displays "UNIDAD" y "DECENA" para mostrar los dígitos 
-de las unidades y decenas, respectivamente, en un ciclo rápido, lo que crea 
-la ilusión de que ambos están encendidos al mismo tiempo.
-*/ 
+//Función para activar un dígito (unidad o decena) 
 void digitoEncendido(int digito)
 {
   if (digito == UNIDAD)
