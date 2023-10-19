@@ -7,6 +7,7 @@ En este proyecto, diseñaremos un contador que mostrará números del 0 al 99 ut
 ### [Enlace al Código Completo en GitHub](Codigos/PARCIAL_1.ino)
 
 ### Diagrama del circuito
+### [Diagrama del circuito](Imagenes/Parcial - parte 1.jpg)
 ![Parcial - parte 1](https://github.com/JoaquinCarbonaro/Parcial-Domiciliario---Sistemas-de-Procesamiento-de-Datos/assets/138243106/5b722cd4-4162-4fe8-aa45-89dd22b88ea7)
 
 ### Multiplexación
