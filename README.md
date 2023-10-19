@@ -80,14 +80,5 @@ En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Par
 
 La modificación basada en el último número del DNI se logra mediante la inclusión de la fotoresistencia. La fotoresistencia detecta la luz ambiental y determina si se debe mostrar el contador o los números primos. La lógica en el código toma la lectura de la fotoresistencia y compara con un umbral predefinido. Si la luz supera el umbral, se muestra el contador; si desciende por debajo del umbral, se muestran los números primos. Esto permite una adaptación dinámica del proyecto según las condiciones de iluminación.
 
-### Instrucciones
-
-- Asegúrate de seguir las instrucciones detalladas en el repositorio de GitHub para construir y ejecutar la versión final del proyecto con la modificación basada en el último número de tu DNI.
-- Documenta las modificaciones realizadas en el código y cómo funcionan, especialmente en lo que respecta a la integración de la fotoresistencia y la lógica de control basada en la luz ambiental.
-
-### Contribución
-
-Si deseas contribuir o mejorar el proyecto, puedes hacerlo mediante solicitudes de extracción en el repositorio de GitHub.
-
 ### Autor
 - Carbonaro Joaquin
