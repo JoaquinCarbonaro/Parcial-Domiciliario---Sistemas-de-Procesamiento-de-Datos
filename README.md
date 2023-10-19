@@ -9,6 +9,8 @@ En este proyecto, diseñaremos un contador que mostrará números del 0 al 99 ut
 ### [Diagrama del circuito]
 ![Parcial - parte 1](https://github.com/JoaquinCarbonaro/Parcial-Domiciliario---Sistemas-de-Procesamiento-de-Datos/assets/138243106/413d6e88-8311-4a59-b67a-fd21a6e597aa)
 
+### [Enlace al Tinkercad](https://www.tinkercad.com/things/hrGVLN8B6LW?sharecode=PC-VvIu_ZNJLlBZ--qM-jlJU69PQQDTH0EQK0xCnVuY)
+
 ### Multiplexación
 En este proyecto, la multiplexación se ha implementado con precisión para controlar los displays de 7 segmentos de manera eficiente. La técnica de multiplexación permite mostrar los dígitos de las unidades y decenas en los dos displays "UNIDAD" y "DECENA" alternativamente, a una velocidad lo suficientemente rápida para crear la ilusión de que ambos están encendidos al mismo tiempo. Este enfoque optimiza el uso de recursos y garantiza un funcionamiento suave y sin parpadeos.
 
@@ -29,6 +31,8 @@ En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Par
 
 ### Diagrama del circuito
 ![Parcial - parte 2](https://github.com/JoaquinCarbonaro/Parcial-Domiciliario---Sistemas-de-Procesamiento-de-Datos/assets/138243106/05cfec5d-a41e-46d2-a83b-56bbadf042af)
+
+### [Enlace al Tinkercad](https://www.tinkercad.com/things/gqt8yuNMQOl?sharecode=y7BFKrL1nRMAzB9MEoOFC1rRHISnKEwi0l4D8h9NfqE)
 
 ### Modificaciones Realizadas
 
@@ -65,6 +69,8 @@ En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Par
 
 ### Diagrama del circuito
 ![Parcial - parte 3](https://github.com/JoaquinCarbonaro/Parcial-Domiciliario---Sistemas-de-Procesamiento-de-Datos/assets/138243106/2c39fb05-f3ae-4ad0-83cc-0a2f1d1419f1)
+
+### [Enlace al Tinkercad](https://www.tinkercad.com/things/1kcFMUMwZow?sharecode=YfPrn3V1Vb7Oc8URLYrZ61pZWq-JI8p_rUbiVfFyi3A)
 
 ### Modificaciones Realizadas
 
