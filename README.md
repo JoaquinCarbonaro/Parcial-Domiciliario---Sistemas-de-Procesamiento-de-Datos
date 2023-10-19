@@ -61,7 +61,7 @@ En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Par
 
 En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Parte 2" para incorporar un componente adicional que afecta el funcionamiento del proyecto basado en el último número de tu número de documento (DNI o documento de identidad). Se explicará en detalle qué hace este nuevo componente y cómo se integra en el proyecto.
 
-### [Enlace al Código Completo en GitHub](enlace-a-tu-repositorio-con-el-codigo)
+### [Enlace al Código Completo en GitHub](Codigos/PARCIAL_3.ino)
 
 ### Diagrama del circuito
 ![Parcial - parte 3](https://github.com/JoaquinCarbonaro/Parcial-Domiciliario---Sistemas-de-Procesamiento-de-Datos/assets/138243106/2c39fb05-f3ae-4ad0-83cc-0a2f1d1419f1)
