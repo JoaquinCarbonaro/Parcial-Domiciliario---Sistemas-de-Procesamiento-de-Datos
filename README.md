@@ -25,7 +25,7 @@ La multiplexación es una técnica esencial en este proyecto, ya que permite mos
 
 En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Parte 1" para incorporar un interruptor deslizante y mostrar números primos en el rango de 0 a 99 además del contador. Además, se investigará un componente electrónico adicional, el "Motor de Aficionado", que podría mejorar el proyecto.
 
-### [Enlace al Código Completo en GitHub](enlace-a-tu-repositorio-con-el-codigo)
+### [Enlace al Código Completo en GitHub](Codigos/PARCIAL_2_.ino)
 
 ### Diagrama del circuito
 ![Parcial - parte 2](https://github.com/JoaquinCarbonaro/Parcial-Domiciliario---Sistemas-de-Procesamiento-de-Datos/assets/138243106/05cfec5d-a41e-46d2-a83b-56bbadf042af)
