@@ -21,9 +21,8 @@
 // VARIABLES
 int numeroPrimo = 2;   // Guarda el valor del número primo
 //int numero = 0;        // Guarda el valor del contador
-// Agrega dos variables para controlar el tiempo de los dos contadores
-unsigned long tiempoContadorNormal = 0;
-unsigned long tiempoContadorPrimo = 0;
+// variables para controlar el tiempo de los dos contadores
+//unsigned long tiempoContadorNormal = 0;
 
 int mediaTemperatura = 0;
 int intensidadLuz = 0;
