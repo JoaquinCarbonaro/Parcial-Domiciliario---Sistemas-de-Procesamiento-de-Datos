@@ -18,10 +18,6 @@ La secuencia de multiplexación se ejecuta mediante la función `digitoEncendido
 
 La multiplexación es una técnica esencial en este proyecto, ya que permite mostrar los dígitos de manera efectiva en displays compartidos sin requerir una gran cantidad de pines y componentes adicionales.
 
-## Autor
-- Carbonaro Joaquin
-
-
 
 ## Parte 2: Modificación con Interruptor Deslizante y Números Primos
 
@@ -55,10 +51,6 @@ En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Par
 - **Función en el Proyecto**: El sensor de temperatura TMP36 se ha incorporado al proyecto para medir la temperatura ambiente. Cuando la temperatura supera un umbral específico (definido como `umbralTemperatura` en el código), el motor de aficionado se activa para enfriar o ventilar el entorno. Esta adición mejora la eficiencia y utilidad del proyecto al automatizar la gestión de la temperatura.
 
 - **Integración en el Proyecto**: El sensor de temperatura se conecta a un pin analógico (en este caso, `SENSOR_TEMPERATURA`). La lectura del sensor se convierte en grados Celsius y se compara con el `umbralTemperatura` para decidir si se debe activar o desactivar el motor de aficionado.
-
-### Autor
-- Carbonaro Joaquin
-
 
 
 ## Parte 3: Modificación según el Último Número de Documento
