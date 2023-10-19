@@ -79,12 +79,12 @@ En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Par
 
 Considerando el último número de tu número de documento (DNI o documento de identidad), modifica una funcionalidad del proyecto. Si tu número de documento termina en (0-3) deberás implementar a tu proyecto que el interruptor deslizante de la parte dos tenga la función de encender y apagar el sistema, solo mostrando los números primos.
 
-### [Enlace al Código Completo en GitHub](Codigos/PARCIAL_1.ino)
+### [Enlace al Código Completo en GitHub](Codigos/PARCIAL_4.ino)
 
 ### [Diagrama del circuito]
 ![Parcial - parte 4](https://github.com/JoaquinCarbonaro/Parcial-Domiciliario---Sistemas-de-Procesamiento-de-Datos/assets/138243106/d7f462ea-02d4-4dcb-8cec-86e801c01937)
 
-### [Enlace al Tinkercad](https://www.tinkercad.com/things/hrGVLN8B6LW?sharecode=PC-VvIu_ZNJLlBZ--qM-jlJU69PQQDTH0EQK0xCnVuY)
+### [Enlace al Tinkercad](https://www.tinkercad.com/things/lBfpEoCfgVG?sharecode=Nyy4SpJ-N-hfnsg2mbeiASdacjpvbWTYxeIZL6IGDT4)
 
 
 ### Autor
