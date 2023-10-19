@@ -44,38 +44,50 @@ En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Par
 
 - **Integración en el Proyecto**: La integración del motor de aficionado ha requerido la adición de circuitos de control y programación en el código. Se han utilizado pines específicos para controlar la velocidad y dirección del motor. Esto agrega una dimensión física al proyecto, mejorando la experiencia del usuario.
 
+### Componente Electrónico Adicional: Sensor de Temperatura TMP36
+
+- **Descripción del Componente**: El "Sensor de Temperatura TMP36" es un componente electrónico ampliamente utilizado para medir la temperatura ambiente. Proporciona una señal de voltaje analógica proporcional a la temperatura en grados Celsius.
+
+- **Función en el Proyecto**: El sensor de temperatura TMP36 se ha incorporado al proyecto para medir la temperatura ambiente. Cuando la temperatura supera un umbral específico (definido como `umbralTemperatura` en el código), el motor de aficionado se activa para enfriar o ventilar el entorno. Esta adición mejora la eficiencia y utilidad del proyecto al automatizar la gestión de la temperatura.
+
+- **Integración en el Proyecto**: El sensor de temperatura se conecta a un pin analógico (en este caso, `SENSOR_TEMPERATURA`). La lectura del sensor se convierte en grados Celsius y se compara con el `umbralTemperatura` para decidir si se debe activar o desactivar el motor de aficionado.
 
 ### Autor
-
 - Carbonaro Joaquin
 
 
 
+## Parte 3: Modificación según el Último Número de Documento
 
+En esta parte del proyecto, se realizarán modificaciones al proyecto de la "Parte 2" para incorporar un componente adicional que afecta el funcionamiento del proyecto basado en el último número de tu número de documento (DNI o documento de identidad). Se explicará en detalle qué hace este nuevo componente y cómo se integra en el proyecto.
 
+### [Enlace al Código Completo en GitHub](enlace-a-tu-repositorio-con-el-codigo)
 
-
-
-# Parte 2: Modificación con Interruptor Deslizante y Números Primos
-Modifica el proyecto de la Parte 1 de la siguiente manera:
-1. Sustituye uno de los botones por un interruptor deslizante (switch) de dos posiciones.
-Dependiendo de la posición del interruptor, el display debe mostrar o bien el contador (como
-en la Parte 1) o los números primos en el rango de 0 a 99.
-2. Investiga un componente electrónico adicional que podría mejorar este proyecto.
-Proporciona una descripción detallada del componente, su función y cómo se podría
-integrar en el proyecto.
-3.Investigar en la semana y agregar uno de los siguientes componentes:
--Sensor de flexión
--Sensor de fuerza
--Sensor de temperatura
-
-
-# Parte 3: Modificación según el Último Número de Documento
-Modifica el proyecto de la Parte 2 de la siguiente manera:
-1. Considerando el último número de tu número de documento (DNI o documento de
-identidad), agrega un componente adicional que afecte el funcionamiento del proyecto.
-Describe en detalle qué hace este nuevo componente y cómo se integra en el proyecto.
--Si tu número de documento termina en (0-3) deberás implementar a tu proyecto la
-fotoresistencia
-
+### Diagrama del circuito
 ![Parcial - parte 3](https://github.com/JoaquinCarbonaro/Parcial-Domiciliario---Sistemas-de-Procesamiento-de-Datos/assets/138243106/2c39fb05-f3ae-4ad0-83cc-0a2f1d1419f1)
+
+### Modificaciones Realizadas
+
+#### Componente Adicional: Fotoresistencia
+
+- **Descripción del Componente**: La "Fotoresistencia" (también conocida como LDR o Light-Dependent Resistor) es un componente que cambia su resistencia eléctrica en función de la intensidad de la luz incidente. Su resistencia disminuye con la luz intensa y aumenta en la oscuridad.
+
+- **Función en el Proyecto**: La fotoresistencia se ha incorporado al proyecto para controlar la visualización en el display en función de la luz ambiente. Dependiendo de la luminosidad detectada por la fotoresistencia, el display mostrará el contador o los números primos. La detección de luz ambiental agrega una dimensión adicional de automatización al proyecto.
+
+- **Integración en el Proyecto**: La fotoresistencia se conecta a un pin analógico y se lee periódicamente para determinar la luminosidad. Cuando la luz ambiental supera un umbral específico, el proyecto mostrará el contador en el display. Si la luminosidad desciende por debajo de ese umbral, el proyecto mostrará los números primos. Esto se logra mediante una lógica en el código que verifica la lectura de la fotoresistencia y decide qué información mostrar en el display.
+
+### Lógica detrás de la Modificación
+
+La modificación basada en el último número del DNI se logra mediante la inclusión de la fotoresistencia. La fotoresistencia detecta la luz ambiental y determina si se debe mostrar el contador o los números primos. La lógica en el código toma la lectura de la fotoresistencia y compara con un umbral predefinido. Si la luz supera el umbral, se muestra el contador; si desciende por debajo del umbral, se muestran los números primos. Esto permite una adaptación dinámica del proyecto según las condiciones de iluminación.
+
+### Instrucciones
+
+- Asegúrate de seguir las instrucciones detalladas en el repositorio de GitHub para construir y ejecutar la versión final del proyecto con la modificación basada en el último número de tu DNI.
+- Documenta las modificaciones realizadas en el código y cómo funcionan, especialmente en lo que respecta a la integración de la fotoresistencia y la lógica de control basada en la luz ambiental.
+
+### Contribución
+
+Si deseas contribuir o mejorar el proyecto, puedes hacerlo mediante solicitudes de extracción en el repositorio de GitHub.
+
+### Autor
+- Carbonaro Joaquin
