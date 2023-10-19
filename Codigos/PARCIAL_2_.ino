@@ -17,8 +17,9 @@
 #define PIN_MOTOR A3
 
 // VARIABLES
-int numeroPrimo = 2;   // Guarda el valor del número primo
-int numero = 0;        // Guarda el valor del contador
+int numeroPrimo = 2; 
+int numero = 0;      
+
 // Agrega dos variables para controlar el tiempo de los dos contadores
 unsigned long tiempoContadorNormal = 0;
 unsigned long tiempoContadorPrimo = 0;
@@ -27,9 +28,8 @@ unsigned long tiempoContadorPrimo = 0;
 int temperatura;
 int umbralTemperatura = 40;  // Define el umbral de temperatura deseado en grados Celsius
 
-
-// FUNCION: SETUP
-void setup() {
+void setup() 
+{
     pinMode(2, INPUT_PULLUP);
     pinMode(A, OUTPUT);
     pinMode(B, OUTPUT);
@@ -42,7 +42,7 @@ void setup() {
     pinMode(DECENA, OUTPUT);
     digitalWrite(UNIDAD, 0);
     digitalWrite(DECENA, 0);
-    verEnDisplay(0);
+    verEnDisplay(0); // Inicializa el display con el valor 0
     pinMode(SENSOR_TEMPERATURA, INPUT);
     pinMode(PIN_MOTOR, OUTPUT);
 }
@@ -56,7 +56,8 @@ void loop()
     float voltaje = (lecturaSensor / 1023.0) * 5.0; // Convertir lectura a voltaje
     temperatura = (voltaje - 0.5) * 100; // Calcular la temperatura en grados Celsius
 
-    if (temperatura >= umbralTemperatura) {
+    if (temperatura >= umbralTemperatura) 
+    {
         digitalWrite(PIN_MOTOR, HIGH); // Encender el motor
     } else {
         digitalWrite(PIN_MOTOR, LOW); // Apagar el motor
@@ -91,13 +92,110 @@ void loop()
     }
 }
 
+
+// FUNCION: INICIAR CONTADOR
+// La funcion tiene como objetivo pasarle a los display  
+// el numero que debe mostrar a traves de los segmentos 
+void iniciarContadorEntero(int numero)
+{	
+    digitoEncendido(APAGADOS);
+    verEnDisplay(numero - (numero / 10) * 10);
+    digitoEncendido(UNIDAD);
+
+  
+    digitoEncendido(APAGADOS);
+    verEnDisplay(numero / 10);
+    digitoEncendido(DECENA);
+}
+
+// FUNCION: INICIAR CONTADOR PRIMO
+// Inicializa los displays para mostrar un número primo 
+// en el formato UNIDAD-DECENA.
+void iniciarContadorPrimo(int numeroPrimo) 
+{
+
+  digitoEncendido(APAGADOS);
+  verEnDisplay(numeroPrimo % 10);  //UNIDADES
+  digitoEncendido(UNIDAD);
+
+  
+  digitoEncendido(APAGADOS);
+  verEnDisplay(numeroPrimo / 10);  //DECENAS
+  digitoEncendido(DECENA);
+
+}
+
+// FUNCION: DIGITO ENCENDIDO
+// La funcion tiene como objetivo controlar la visualizacion de 
+// los displays a traves de la UNIDAD y DECENA, apagando y 
+// prendiendo los mismos dependiendo el numero a mostrar
+void digitoEncendido(int numero) 
+{
+    if (numero == UNIDAD) 
+    {
+      digitalWrite(UNIDAD, LOW);
+      digitalWrite(DECENA, HIGH);
+ 		  delay(TIMEDISPLAYON);
+    }
+    else if (numero == DECENA) 
+    {
+      digitalWrite(UNIDAD, HIGH);
+      digitalWrite(DECENA, LOW);
+		  delay(TIMEDISPLAYON);
+    } 
+    else 
+    {
+      digitalWrite(UNIDAD, HIGH);
+      digitalWrite(DECENA, HIGH);
+		  delay(TIMEDISPLAYON);
+    }
+}
+
+// FUNCION: APAGAR DISPLAYS 
+//Apaga todos los segmentos de los displays.
+void apagarDisplays() 
+{
+    digitalWrite(A, LOW);
+    digitalWrite(B, LOW);
+    digitalWrite(C, LOW);
+    digitalWrite(D, LOW);
+    digitalWrite(E, LOW);
+    digitalWrite(F, LOW);
+    digitalWrite(G, LOW);
+}
+
+         
+//FUNCION: ES PRIMO
+//Comprueba si un número es primo.
+bool esPrimo(int num) 
+{
+  int contadorPrimo = 0;  // Inicializamos el contador de números primos a 0
+
+  for (int i = 1; i <= num; i++) 
+  {
+    if (num % i == 0) 
+    {
+      contadorPrimo += 1;
+    }
+  }
+
+  if (contadorPrimo == 2) 
+  {
+    return true;  // Si tiene exactamente 2 divisores, es primo
+  } else 
+  {
+    return false;  // De lo contrario, no es primo
+  }
+}
+
 // FUNCION: VER EN DISPLAY
 // La funcion tiene como objetivo el manejo de los segmentos del
 // display dependiendo del numero del contador (UNIDAD Y DECENA)                
 void verEnDisplay(int numero)
 {
     apagarDisplays();
-    switch (numero){
+    switch (numero)
+    {
       case 0:
       digitalWrite(A, HIGH);
       digitalWrite(B, HIGH);
@@ -168,94 +266,4 @@ void verEnDisplay(int numero)
         digitalWrite(G, HIGH);
         break;
     }
-}
-
-// FUNCION: INICIAR CONTADOR
-// La funcion tiene como objetivo pasarle a los display  
-// el numero que debe mostrar a traves de los segmentos 
-void iniciarContadorEntero(int numero)
-{	
-    digitoEncendido(APAGADOS);
-    verEnDisplay(numero - (numero / 10) * 10);
-    digitoEncendido(UNIDAD);
-
-  
-    digitoEncendido(APAGADOS);
-    verEnDisplay(numero / 10);
-    digitoEncendido(DECENA);
-}
-
-
-void iniciarContadorPrimo(int numeroPrimo) 
-{
-
-  digitoEncendido(APAGADOS);
-  verEnDisplay(numeroPrimo % 10);  //UNIDADES
-  digitoEncendido(UNIDAD);
-
-  
-  digitoEncendido(APAGADOS);
-  verEnDisplay(numeroPrimo / 10);  //DECENAS
-  digitoEncendido(DECENA);
-
-}
-
-// FUNCION: DIGITO ENCENDIDO
-// La funcion tiene como objetivo controlar la visualizacion de 
-// los displays a traves de la UNIDAD y DECENA, apagando y 
-// prendiendo los mismos dependiendo el numero a mostrar
-void digitoEncendido(int numero) 
-{
-    if (numero == UNIDAD) 
-    {
-        digitalWrite(UNIDAD, LOW);
-        digitalWrite(DECENA, HIGH);
- 		delay(TIMEDISPLAYON);
-    }
-    else if (numero == DECENA) 
-    {
-        digitalWrite(UNIDAD, HIGH);
-        digitalWrite(DECENA, LOW);
-		delay(TIMEDISPLAYON);
-    } 
-    else 
-    {
-        digitalWrite(UNIDAD, HIGH);
-        digitalWrite(DECENA, HIGH);
-		delay(TIMEDISPLAYON);
-    }
-}
-
-  
-void apagarDisplays() {
-    digitalWrite(A, LOW);
-    digitalWrite(B, LOW);
-    digitalWrite(C, LOW);
-    digitalWrite(D, LOW);
-    digitalWrite(E, LOW);
-    digitalWrite(F, LOW);
-    digitalWrite(G, LOW);
-}
-
-         
-//FUNCION: ES PRIMO
-bool esPrimo(int num) 
-{
-  int contadorPrimo = 0;  // Inicializamos el contador de números primos a 0
-
-  for (int i = 1; i <= num; i++) 
-  {
-    if (num % i == 0) 
-    {
-      contadorPrimo += 1;
-    }
-  }
-
-  if (contadorPrimo == 2) 
-  {
-    return true;  // Si tiene exactamente 2 divisores, es primo
-  } else 
-  {
-    return false;  // De lo contrario, no es primo
-  }
 }
